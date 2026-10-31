@@ -46,18 +46,25 @@ img{max-width:100%;height:auto;display:block}
 .etape{background:var(--nuit);border-radius:28px;padding:28px}
 .etape p{margin:0;font-size:19px;line-height:1.45;color:var(--creme)}
 .icone{display:block;height:40px;width:auto;margin-bottom:20px;color:var(--orange)}
-/* Light chapters: plain colour with a light grain and a soft halo, as in the design system */
+/* Light chapters: the app's light full screens. Cream, a grey grain multiplied at 20 %, and the round halo */
 .orange,.beige{position:relative;overflow:hidden;isolation:isolate}
-.orange::after,.beige::after{content:"";position:absolute;inset:0;z-index:-1;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.12  0 0 0 0 0.10  0 0 0 0 0.08  0 0 0 0.9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px;opacity:.07;mix-blend-mode:multiply;pointer-events:none}
+.orange::after,.beige::after{content:"";position:absolute;inset:0;z-index:3;background:url(img/grain.png);background-size:80px;mix-blend-mode:multiply;opacity:.2;pointer-events:none}
+.orange::after{opacity:.12}
 .orange{background:radial-gradient(ellipse 55% 75% at 82% 108%,#FFE2C2 0%,rgba(255,226,194,.55) 28%,rgba(242,130,36,0) 62%),var(--orange)}
 .orange .titre{color:#fff}
 .orange .etape{background:#FAF3E3}
 .orange .etape p{color:#1E1A15}
-.beige{color:#1E1A15;background:radial-gradient(ellipse 50% 70% at 92% 105%,rgba(251,199,149,.85) 0%,rgba(250,217,180,.5) 32%,rgba(250,217,180,0) 68%),#FAF3E3}
-.beige.gauche-inutilise{background:radial-gradient(ellipse 50% 70% at 6% 110%,rgba(251,199,149,.85) 0%,rgba(250,217,180,.5) 32%,rgba(250,217,180,0) 68%),#FAF3E3}
-/* The tool chapter: centred, with the onboarding halo rising from the bottom edge */
-.beige.centre{text-align:center;padding-bottom:200px;background:radial-gradient(ellipse 38% 62% at 50% 112%,#FFE2C2 0%,rgba(242,130,36,.75) 30%,rgba(242,130,36,.28) 52%,rgba(242,130,36,0) 72%),#FAF3E3}
+.beige{background:#FAF3E3;color:#1E1A15}
+.beige .texte{color:#5C5346}
+.halo{position:absolute;border-radius:50%;background:radial-gradient(circle farthest-corner,#FFE2C2 0%,#F28224 26%,rgba(242,130,36,.35) 52%,rgba(242,130,36,0) 72%);filter:blur(8px);pointer-events:none}
+.chapitre>.grille{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+.halo-mot{position:relative;width:min(420px,100%);aspect-ratio:1;justify-self:center;display:flex;align-items:center;justify-content:center}
+.halo-mot .halo{inset:0}
+.halo-mot span{position:relative;font-size:46px;font-weight:400;letter-spacing:-0.02em;color:#1E1A15;white-space:nowrap}
+.beige.centre{text-align:center;padding-bottom:260px}
 .beige.centre .texte span{margin:0 auto}
+.beige.centre .halo{width:760px;height:760px;left:50%;bottom:-470px;margin-left:-380px}
+.beige.centre>*:not(.halo){position:relative}
 .beige .texte{color:#5C5346}
 .horizon{background:var(--nuit) url(img/horizon.jpg) no-repeat center bottom;background-size:cover;padding-bottom:280px}
 .horizon .titre{font-size:clamp(48px,7.4vw,88px)}
@@ -106,7 +113,11 @@ footer a:hover{color:var(--creme)}
   .etape p{font-size:17px}
   .icone{height:32px;margin:0;flex:none;width:auto;min-width:32px}
   .horizon{padding-bottom:220px}
-  .beige.centre{padding-bottom:180px;background:radial-gradient(ellipse 85% 48% at 50% 108%,#FFE2C2 0%,rgba(242,130,36,.75) 30%,rgba(242,130,36,.28) 52%,rgba(242,130,36,0) 72%),#FAF3E3}
+  .beige.centre{padding-bottom:220px}
+  .beige.centre .halo{width:520px;height:520px;bottom:-320px;margin-left:-260px}
+  .chapitre>.grille{grid-template-columns:1fr;gap:8px}
+  .halo-mot{width:300px;margin-top:16px}
+  .halo-mot span{font-size:40px}
   .horizon h3{margin-top:48px}
   .carte{padding:28px 24px}
   .support{padding-top:0}
