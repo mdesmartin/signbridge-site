@@ -48,10 +48,11 @@ img{max-width:100%;height:auto;display:block}
 .icone{display:block;height:40px;width:auto;margin-bottom:20px;color:var(--orange)}
 /* Light chapters: the app's light full screens. Cream, a grey grain multiplied at 20 %, and the round halo */
 .orange,.beige{position:relative;overflow:hidden;isolation:isolate}
-.orange::after,.beige::after{content:"";position:absolute;inset:0;z-index:3;background:url(img/grain.png);background-size:80px;mix-blend-mode:multiply;opacity:.2;pointer-events:none}
-.orange::after{opacity:.32;background-size:120px;z-index:0}
+.beige::after{content:"";position:absolute;inset:0;z-index:3;background:url(img/grain.png);background-size:80px;mix-blend-mode:multiply;opacity:.2;pointer-events:none}
+/* How it works: the hero's horizon, flipped, so the orange light comes from the top and darkens a little downwards */
+.orange{background:var(--nuit)}
+.orange::before{content:"";position:absolute;left:0;right:0;top:0;height:190%;z-index:0;background:url(img/horizon.jpg) no-repeat center bottom/cover;transform:scaleY(-1);transform-origin:top;translate:0 100%;pointer-events:none}
 .orange>*{position:relative;z-index:1}
-.orange{background:radial-gradient(ellipse 55% 75% at 82% 108%,#FFE2C2 0%,rgba(255,226,194,.55) 28%,rgba(242,130,36,0) 62%),var(--orange)}
 .orange .titre{color:#fff}
 .orange .etape{background:#FAF3E3}
 .orange .etape p{color:#1E1A15}
@@ -62,11 +63,12 @@ img{max-width:100%;height:auto;display:block}
 .halo-mot{position:relative;width:min(420px,100%);aspect-ratio:1;justify-self:center;display:flex;align-items:center;justify-content:center}
 .halo-mot .halo{inset:0}
 .halo-mot span{position:relative;font-size:46px;font-weight:400;letter-spacing:-0.02em;color:#1E1A15;white-space:nowrap}
-.beige.centre{text-align:center;padding-top:260px}
-.beige.centre .texte span{margin:0 auto}
-/* The halo comes down from the top edge, continuing the horizon of the chapter above */
-.beige.centre .halo{width:900px;height:900px;left:50%;top:-560px;margin-left:-450px}
-.beige.centre>*:not(.halo){position:relative}
+/* The tool chapter: smaller, with the halo rising from the bottom-left corner */
+.beige.outil{padding:96px 24px 200px}
+.beige.outil .titre{font-size:clamp(26px,3vw,34px)}
+.beige.outil .texte{margin-top:14px;font-size:18px}
+.beige.outil .halo{width:620px;height:620px;left:-200px;bottom:-400px}
+.beige.outil>*:not(.halo){position:relative}
 .beige .texte{color:#5C5346}
 .horizon{background:var(--nuit) url(img/horizon.jpg) no-repeat center bottom;background-size:cover;padding-bottom:280px}
 .horizon .titre{font-size:clamp(48px,7.4vw,88px)}
@@ -115,8 +117,9 @@ footer a:hover{color:var(--creme)}
   .etape p{font-size:17px}
   .icone{height:32px;margin:0;flex:none;width:auto;min-width:32px}
   .horizon{padding-bottom:220px}
-  .beige.centre{padding-top:200px}
-  .beige.centre .halo{width:560px;height:560px;top:-350px;margin-left:-280px}
+  .beige.outil{padding:72px 24px 170px}
+  .beige.outil .texte{font-size:17px}
+  .beige.outil .halo{width:440px;height:440px;left:-170px;bottom:-290px}
   .chapitre>.grille{grid-template-columns:1fr;gap:8px}
   .halo-mot{width:300px;margin-top:16px}
   .halo-mot span{font-size:40px}
