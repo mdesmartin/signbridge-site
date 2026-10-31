@@ -49,7 +49,7 @@ img{max-width:100%;height:auto;display:block}
 /* Light chapters: the app's light full screens. Cream, a grey grain multiplied at 20 %, and the round halo */
 .orange,.beige{position:relative;overflow:hidden;isolation:isolate}
 .orange::after,.beige::after{content:"";position:absolute;inset:0;z-index:3;background:url(img/grain.png);background-size:80px;mix-blend-mode:multiply;opacity:.2;pointer-events:none}
-.orange::after{opacity:.12}
+.orange::after{opacity:.2}
 .orange{background:radial-gradient(ellipse 55% 75% at 82% 108%,#FFE2C2 0%,rgba(255,226,194,.55) 28%,rgba(242,130,36,0) 62%),var(--orange)}
 .orange .titre{color:#fff}
 .orange .etape{background:#FAF3E3}
@@ -61,9 +61,10 @@ img{max-width:100%;height:auto;display:block}
 .halo-mot{position:relative;width:min(420px,100%);aspect-ratio:1;justify-self:center;display:flex;align-items:center;justify-content:center}
 .halo-mot .halo{inset:0}
 .halo-mot span{position:relative;font-size:46px;font-weight:400;letter-spacing:-0.02em;color:#1E1A15;white-space:nowrap}
-.beige.centre{text-align:center;padding-bottom:260px}
+.beige.centre{text-align:center;padding-top:260px}
 .beige.centre .texte span{margin:0 auto}
-.beige.centre .halo{width:760px;height:760px;left:50%;bottom:-470px;margin-left:-380px}
+/* The halo comes down from the top edge, continuing the horizon of the chapter above */
+.beige.centre .halo{width:900px;height:900px;left:50%;top:-560px;margin-left:-450px}
 .beige.centre>*:not(.halo){position:relative}
 .beige .texte{color:#5C5346}
 .horizon{background:var(--nuit) url(img/horizon.jpg) no-repeat center bottom;background-size:cover;padding-bottom:280px}
@@ -113,8 +114,8 @@ footer a:hover{color:var(--creme)}
   .etape p{font-size:17px}
   .icone{height:32px;margin:0;flex:none;width:auto;min-width:32px}
   .horizon{padding-bottom:220px}
-  .beige.centre{padding-bottom:220px}
-  .beige.centre .halo{width:520px;height:520px;bottom:-320px;margin-left:-260px}
+  .beige.centre{padding-top:200px}
+  .beige.centre .halo{width:560px;height:560px;top:-350px;margin-left:-280px}
   .chapitre>.grille{grid-template-columns:1fr;gap:8px}
   .halo-mot{width:300px;margin-top:16px}
   .halo-mot span{font-size:40px}
