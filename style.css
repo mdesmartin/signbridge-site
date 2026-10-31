@@ -60,11 +60,12 @@ img{max-width:100%;height:auto;display:block}
 .beige .texte{color:#5C5346}
 .halo{position:absolute;border-radius:50%;background:radial-gradient(circle farthest-corner,#FFE2C2 0%,#F28224 26%,rgba(242,130,36,.35) 52%,rgba(242,130,36,0) 72%);filter:blur(8px);pointer-events:none}
 .chapitre>.grille{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
-.halo-mot{position:relative;width:min(420px,100%);aspect-ratio:1;justify-self:center;display:flex;align-items:center;justify-content:center}
+.halo-mot{position:relative;width:min(360px,100%);aspect-ratio:1;justify-self:center;display:flex;align-items:center;justify-content:center}
 .halo-mot .halo{inset:0}
 .halo-mot span{position:relative;font-size:46px;font-weight:400;letter-spacing:-0.02em;color:#1E1A15;white-space:nowrap}
 /* The tool chapter: smaller, with the halo rising from the bottom-left corner */
-.beige.outil{padding:96px 24px 200px}
+.beige{padding-top:88px;padding-bottom:88px}
+.beige.outil{padding:72px 24px 160px}
 .beige.outil .titre{font-size:clamp(26px,3vw,34px)}
 .beige.outil .texte{margin-top:14px;font-size:18px}
 .beige.outil .halo{width:620px;height:620px;left:-200px;bottom:-400px}
@@ -117,11 +118,12 @@ footer a:hover{color:var(--creme)}
   .etape p{font-size:17px}
   .icone{height:32px;margin:0;flex:none;width:auto;min-width:32px}
   .horizon{padding-bottom:220px}
-  .beige.outil{padding:72px 24px 170px}
+  .beige{padding-top:64px;padding-bottom:64px}
+  .beige.outil{padding:56px 24px 140px}
   .beige.outil .texte{font-size:17px}
   .beige.outil .halo{width:440px;height:440px;left:-170px;bottom:-290px}
   .chapitre>.grille{grid-template-columns:1fr;gap:8px}
-  .halo-mot{width:300px;margin-top:16px}
+  .halo-mot{width:250px;margin-top:8px}
   .halo-mot span{font-size:40px}
   .horizon h3{margin-top:48px}
   .carte{padding:28px 24px}
