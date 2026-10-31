@@ -16,3 +16,5 @@ App Store Connect URLs (keep these paths):
 - Marketing: https://mdesmartin.github.io/signbridge-site/
 - Support: https://mdesmartin.github.io/signbridge-site/#support
 - Privacy policy: https://mdesmartin.github.io/signbridge-site/privacy.html
+
+Both languages have the same height for every chapter, at every screen width: each text block also holds the other language's text, invisible (`.jumeau` / `.fantome`), so it takes the room of the longer of the two. Edit the French and English texts together.
