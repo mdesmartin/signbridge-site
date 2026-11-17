@@ -18,3 +18,11 @@ App Store Connect URLs (keep these paths):
 - Privacy policy: https://mdesmartin.github.io/signbridge-site/privacy.html
 
 Both languages have the same height for every chapter, at every screen width: each text block also holds the other language's text, invisible (`.jumeau` / `.fantome`), so it takes the room of the longer of the two. Edit the French and English texts together.
+
+Search and sharing (2026-11-17, SB-103):
+
+- Each page has a canonical URL and `hreflang` links (fr, en, x-default = English); `sitemap.xml` lists the four pages with their alternates. Submit it in Google Search Console (URL-prefix property `https://mdesmartin.github.io/signbridge-site/`, verified with a meta tag). A project site cannot have its own `robots.txt` (it would sit at the domain root); not needed.
+- Titles and descriptions aim at real searches (« langue des signes », LSF, iPhone, hors ligne) and reuse the App Store wording; never « traduire ».
+- Open Graph and Twitter tags use `img/og-fr.jpg` / `img/og-en.jpg` (1200 × 630, made from the App Store header with a dark band on top).
+- `apple-itunes-app` shows Safari's Smart App Banner on iPhone.
+- JSON-LD `MobileApplication` describes the app for search engines; update it if the price or the languages change.

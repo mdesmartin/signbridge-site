@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+ <url>
+  <loc>https://mdesmartin.github.io/signbridge-site/</loc>
+  <lastmod>2026-11-17</lastmod>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://mdesmartin.github.io/signbridge-site/"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://mdesmartin.github.io/signbridge-site/en/"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mdesmartin.github.io/signbridge-site/en/"/>
+ </url>
+ <url>
+  <loc>https://mdesmartin.github.io/signbridge-site/en/</loc>
+  <lastmod>2026-11-17</lastmod>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://mdesmartin.github.io/signbridge-site/"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://mdesmartin.github.io/signbridge-site/en/"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mdesmartin.github.io/signbridge-site/en/"/>
+ </url>
+ <url>
+  <loc>https://mdesmartin.github.io/signbridge-site/privacy.html</loc>
+  <lastmod>2026-11-17</lastmod>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://mdesmartin.github.io/signbridge-site/privacy.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://mdesmartin.github.io/signbridge-site/en/privacy.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mdesmartin.github.io/signbridge-site/en/privacy.html"/>
+ </url>
+ <url>
+  <loc>https://mdesmartin.github.io/signbridge-site/en/privacy.html</loc>
+  <lastmod>2026-11-17</lastmod>
+  <xhtml:link rel="alternate" hreflang="fr" href="https://mdesmartin.github.io/signbridge-site/privacy.html"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://mdesmartin.github.io/signbridge-site/en/privacy.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://mdesmartin.github.io/signbridge-site/en/privacy.html"/>
+ </url>
+</urlset>
